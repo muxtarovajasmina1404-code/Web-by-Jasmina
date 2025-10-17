@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Web by Jasmina — Адаптивный сайт под ключ</title>
+  <meta name="description" content="Web by Jasmina — Современные сайты, которые работают на всех устройствах. Адаптивная верстка на HTML, CSS, JavaScript.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">
+          <!-- simple SVG logo -->
+          <svg width="44" height="44" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            <path d="M3 18h18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M8 7v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div>
+          <h1 class="site-title">Web by Jasmina</h1>
+          <p class="site-tag">Современные сайты, которые работают на всех устройствах</p>
+        </div>
+      </div>
+      <nav>
+        <a class="btn-ghost" href="#services">Услуги</a>
+        <a class="btn-primary" id="orderBtn" href="https://kwork.ru/user/jasinas" target="_blank" rel="noopener">Заказать на Kwork</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h2>Адаптивный сайт под ключ</h2>
+          <p>Чистая семантическая верстка, адаптивность под мобильные устройства, быстрая загрузка и понятный код.</p>
+          <div class="hero-cta">
+            <a class="btn-primary large" id="orderBtn2" href="https://kwork.ru/user/jasinas" target="_blank" rel="noopener">Заказать на Kwork</a>
+            <a class="btn-ghost" href="#process">Как я работаю</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <!-- stylized code mockup -->
+          <div class="mockup">
+            <div class="mockup-topbar">
+              <span></span><span></span><span></span>
+            </div>
+            <pre><code>&lt;!doctype html&gt;
+&lt;html lang="ru"&gt;
+&lt;head&gt;…&lt;/head&gt;
+&lt;body&gt;
+  &lt;!-- Ваш сайт здесь --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section container">
+      <h3>Что входит в услугу</h3>
+      <div class="grid services-grid">
+        <div class="card">
+          <h4>Адаптивная верстка</h4>
+          <p>Сайт корректно отображается на телефонах, планшетах и десктопах (media-queries, flexbox, grid).</p>
+        </div>
+        <div class="card">
+          <h4>Чистый код</h4>
+          <p>Семантическая структура, понятные классы и комментарии — удобно поддерживать и дорабатывать.</p>
+        </div>
+        <div class="card">
+          <h4>Интерактив</h4>
+          <p>Небольшие JS-анимации и плавное поведение интерфейса (кнопки, скролл, модальные окна).</p>
+        </div>
+        <div class="card">
+          <h4>Оптимизация</h4>
+          <p>Минимизация кода, быстрая загрузка изображений и рекомендациям по SEO-основам.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="section alternate">
+      <div class="container">
+        <h3>Этапы работы</h3>
+        <ol class="process-list">
+          <li><strong>Бриф</strong> — вы даёте материалы: название, тексты, картинки или примеры сайтов.</li>
+          <li><strong>Макет / структура</strong> — я предлагаю структуру и визуальную схему.</li>
+          <li><strong>Верстка</strong> — сверстаю страницы, добавлю адаптивность и интерактив.</li>
+          <li><strong>Тест и сдача</strong> — финальные правки, проверка на всех устройствах, передача файлов или размещение на хостинге.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section container">
+      <h3>Почему выбирают меня</h3>
+      <ul class="benefits">
+        <li>Индивидуальный подход — адаптирую дизайн под ваш бренд.</li>
+        <li>Чёткие сроки и понятные этапы.</li>
+        <li>Поддержка после сдачи — отвечаю на вопросы и помогаю с простыми правками.</li>
+      </ul>
+    </section>
+
+    <section class="section contact alternate">
+      <div class="container contact-inner">
+        <div>
+          <h3>Готовы начать?</h3>
+          <p>Отправьте мне краткую информацию — и я подготовлю предложение.</p>
+          <ul class="needed">
+            <li>Название проекта</li>
+            <li>Краткое описание и цель сайта</li>
+            <li>Тексты и изображения (если есть)</li>
+            <li>Примеры сайтов, которые нравятся</li>
+          </ul>
+          <a class="btn-primary large" href="https://kwork.ru/user/jasinas" target="_blank" rel="noopener">Заказать на Kwork</a>
+        </div>
+        <form class="brief" id="briefForm" onsubmit="return false;">
+          <h4>Быстрый бриф</h4>
+          <label>Название проекта<input type="text" id="pname" placeholder="Например: GreenLine"></label>
+          <label>Краткое описание<textarea id="pdesc" placeholder="Кратко о цели сайта"></textarea></label>
+          <label>Контакты<input type="text" id="pcontact" placeholder="Телефон или email"></label>
+          <button class="btn-ghost" id="fillBtn">Скопировать в сообщение Kwork</button>
+          <p class="note">Нажмите кнопку — текст будет скопирован в буфер обмена для отправки в чат Kwork.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Web by Jasmina — Адаптивные сайты на HTML/CSS/JS</p>
+      <div class="small-links">
+        <a href="https://kwork.ru/user/jasinas" target="_blank" rel="noopener">Профиль на Kwork</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
